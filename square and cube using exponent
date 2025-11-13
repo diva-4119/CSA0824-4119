@@ -1,0 +1,9 @@
+num=int(input("enter the number:"))
+s=num**2
+c=num**3
+print("square:",s,"\n""cube:",c)
+
+output:
+enter the number:2
+square: 4 
+cube: 8
