@@ -1,0 +1,29 @@
+1 #swap two number using 3rd variable
+a=int(input("enter 1st no:"))
+b=int(input("enter 2nd no:"))
+print("before swaping",a,b)
+c=a
+a=b
+b=c
+print("after swaping",a,b)
+
+output:
+enter 1st no:2
+enter 2nd no:3
+before swaping 2 3
+after swaping 3 2
+
+2 #swap two number without using 3rd variable
+a=int(input("enter 1st no:"))
+b=int(input("enter 2nd no:"))
+print("before swaping",a,b)
+a=a+b
+b=a-b
+a=a-b
+print("after swaping",a,b)
+
+output:
+enter 1st no:5
+enter 2nd no:9
+before swaping 5 9
+after swaping 9 5
