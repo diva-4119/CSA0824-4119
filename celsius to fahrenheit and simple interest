@@ -1,0 +1,23 @@
+1:celsius to fahrenheit
+
+celsius=int(input("celsius:"))
+f=(celsius*9/5)+32
+print("fahrenheit:",f)
+
+output:
+celsius:36
+fahrenheit: 96.8
+
+2:simple interest
+
+p=int(input("principle amount:"))
+r=int(input("rate:"))
+t=int(input("time:"))
+si=(p*r*t)/100
+print("simple interest:",si)
+
+output:
+principle amount:5000
+rate:8
+time:3
+simple interest: 1200.0

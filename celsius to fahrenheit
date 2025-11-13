@@ -1,7 +1,0 @@
-celsius=int(input("celsius:"))
-f=(celsius*9/5)+32
-print("fahrenheit:",f)
-
-output:
-celsius:36
-fahrenheit: 96.8
