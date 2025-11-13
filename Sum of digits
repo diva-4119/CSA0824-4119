@@ -7,3 +7,7 @@ while temp>0:
     sum+=digit
     temp=temp//10
 print("sum of digit:",sum)
+
+output:
+Enter the number:123
+sum of digit: 6
