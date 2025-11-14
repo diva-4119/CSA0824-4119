@@ -11,7 +11,7 @@ print("sum of digit:",sum)
 output:
 Enter the number:123
 sum of digit: 6
-
+````````````````````````````````````
 1. #sum of N natural numbers
 
 n=int(input("enter the limit:"))
@@ -23,7 +23,7 @@ print("sum of N natural numbers:",count)
 output:
 enter the limit:10
 sum of N natural numbers: 55
-
+```````````````````````````````````````
 2. #sum of square of N natural numbers
 
 n=int(input("enter the limit:"))
@@ -35,7 +35,7 @@ print("sum of square of N natural numbers:",count)
 output:
 enter the limit:5
 sum of N natural numbers: 55
-
+`````````````````````````````````````````````
 3. # sum of factorial of N numbers
 
 def fact(n):
