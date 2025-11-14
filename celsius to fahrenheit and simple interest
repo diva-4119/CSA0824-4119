@@ -21,3 +21,23 @@ principle amount:5000
 rate:8
 time:3
 simple interest: 1200.0
+
+3.simple interest for senior and normal person
+
+p=int(input("enter the principle amount:"))
+n=int(input("enter the number years:"))
+sc=input("senior citizen yes/no:")
+g=input("male or female:")
+if sc=='yes' and g=='male':
+    print("si=",(p*n*12)/100)
+elif sc=='yes' and g=='female':
+    print("si=",(p*n*15)/100)
+else:
+    print("si=",(p*n*10)/100)
+
+output:
+enter the principle amount:5000
+enter the number years:62
+senior citizen yes/no:yes
+male or female:male
+si= 37200.0
