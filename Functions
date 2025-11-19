@@ -1,0 +1,71 @@
+1.Write a Python program to print the multiplication table of a given number.
+def multi(n):
+  for i in range (1,11):
+    print(n,"x",i,"=",n*1)
+ 
+x=int(input())
+multi(x)
+
+2.Write a Python program to find the factorial of a number using a loop.
+def factorial(n):
+  fact=1
+  for i in range (1,n+1):
+  	fact=fact*i
+  print(fact)
+  
+x=int(input())
+factorial(x)
+
+3.Write a Python program to find the sum of digits in a number.
+def sumdigit(n):
+  sum=0
+  temp=n
+  while temp>0:
+    digit=temp%10
+    sum+=digit
+    temp=temp//10
+  print(sum)
+  
+x=int(input())
+sumdigit(x)
+
+4. Write a Python program to check if a number is a palindrome or not.
+def palindrome(n):
+	org=n
+	rev=0
+	while n>0:
+	  digit=n%10
+	  rev=rev*10+digit
+	  n=n//10
+	if org==rev:
+	  print("it a palindrome")
+	else:
+	  print("Not a palindrome")
+x=int(input())
+palindrome(x)
+
+5. Write a Python program to find the sum of the first N natural numbers.
+def sum(n):
+  sum=0
+  for i in range (1,n+1):
+    sum+=i
+  print(sum)
+  
+x=int(input())
+sum(x)
+
+6.Write a Python program to find the second largest element in a list.
+def max(l) :
+  l=list(set(l))
+  l=sorted(l)
+  print("2nd max:",l[-2])
+x=[1,2,3,6,4,7,9,4,6]
+max(x)
+
+7.Write a Python function to remove duplicate elements from a list.
+def remove(myst):
+	result=list(set(myst))
+	print(result)
+
+minest=[1,2,2,3,2,4,1,5]
+remove(minest)
