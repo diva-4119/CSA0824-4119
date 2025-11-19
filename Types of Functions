@@ -1,0 +1,13 @@
+1. Write a Python program to count the number of vowels in a given string using a map function.
+def map_fun(str):
+  vowel='a','e','i','o','u','A','E','I','O','U'
+  count=0
+  for i in (str):
+    if i in vowel:
+      count+=1
+  print(count)
+  
+n=input()
+map_fun(n)
+
+2.
