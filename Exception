@@ -1,0 +1,51 @@
+class InsufficientFundsError(Exception):
+    """A custom exception for insufficient funds."""
+    pass
+
+class BankAccount:
+    """A class to represent a bank account."""
+    def __init__(self, initial_balance=0.0):
+        self.balance = initial_balance
+
+    def withdraw(self, amount):
+        """
+        Withdraws money from the account.
+        
+        Args:
+            amount (float): The amount to withdraw.
+
+        Raises:
+            InsufficientFundsError: If the withdrawal amount is more than the balance.
+        """
+        if amount > self.balance:
+            raise InsufficientFundsError("Withdrawal amount exceeds available balance.")
+        
+        self.balance -= amount
+        print(f"Withdrawal of ${amount:.2f} successful. New balance: ${self.balance:.2f}")
+
+    def get_balance(self):
+        """Returns the current account balance."""
+        return self.balance
+
+# --- Simulation ---
+
+# Create a bank account with an initial balance
+my_account = BankAccount(100.00)
+
+print(f"Initial balance: ${my_account.get_balance():.2f}")
+
+# Scenario 1: A successful withdrawal
+try:
+    print("\nAttempting to withdraw $50.00...")
+    my_account.withdraw(50.00)
+except InsufficientFundsError as e:
+    print(f"Error: {e}")
+
+# Scenario 2: An unsuccessful withdrawal due to insufficient funds
+try:
+    print("\nAttempting to withdraw $75.00...")
+    my_account.withdraw(75.00)
+except InsufficientFundsError as e:
+    print(f"Error: {e}")
+
+print(f"\nFinal balance: ${my_account.get_balance():.2f}")
