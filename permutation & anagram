@@ -1,0 +1,32 @@
+1.permutation
+def getper(string,i=0):
+    if i == len(string):
+        print("".join(string))
+    for j in range (i,len(string)):
+        word=[c for c in string ]
+        
+        word[i],word[j]=word[j],word[i]
+        getper(word,i+1)
+
+print(getper('123'))
+
+output:
+123
+132
+213
+231
+321
+312
+None
+
+2.anagram
+st1="abcd"
+st2="bdca"
+if sorted(st1.lower())==sorted(st2.lower()):
+    print("it is Anagram")
+else:
+    print("Not Anagram")
+    
+output:
+it is Anagram
+    
